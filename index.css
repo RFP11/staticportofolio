@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151617;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.accentText{
+  color: #41c3ff;
+}
+
+nav {
+    background-color: transparent;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .container-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    border-radius: 20%,2z;
+    overflow: hidden;
+  }
+
+.image-container {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.about{
+  font-size: 3rem;
+  text-align: center;
+  width: 50%;
+}
+
+.about p:first-child {
+  margin-bottom: -5px;
+}
+
+.about p:last-child {
+  margin-top: -5px;
+}
+
+
+  .title{
+    position: absolute;
+    left: 5vh;
+    top: -2vh;
+    font-size: 2rem;
+  }
+
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #41c3ff;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+
+  .container-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .head-title{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+  }
+
+  .worksheet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: auto;
+  }
+
+  .card{
+    width: 300px;
+    height: 450px;
+    background-color: #36454f;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh;
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .card h1{
+    font-size: 25px;
+  }
+  .card h2{
+    font-size: 20px;
+  }
+  .card p{
+    font-size: 14px;
+  }
+
+  .poster{
+    width: 290px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .sub-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text {
+    margin-top: auto;
+  }
+
+  .text p{
+    font-size: 10px;
+  }
+
+  .sub-footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-link:hover {
+    background-color: #0069d9;
+  }
+
+  .footer{
+    display: flex;
+    background-color:#36454f ;
+    flex-direction: row;
+  }
+  
+
+
+
+@media (width <= 768px) {
+
+  nav ul{
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    right: 10vh;
+    top: 5vh;
+    animation: slideIn 0.3s ease-in-out forwards;
+  }
+
+  .title{
+    top: -2vh;
+    user-select: none;
+  }
+
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    color-scheme: #fff;
+    position: absolute;
+    right: 3vh;
+    padding-top: 5vh;
+    
+  }
+
+  .hamburger.close {
+    /* Add this block */
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .container-head{
+    flex-direction: column;
+  }
+
+  .about{
+    margin-top: 5vh;
+    margin-bottom: 45vh;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .image-container{
+    width: 300px;
+    height: 300px;
+  }
+
+  .worksheet{
+    overflow-x: scroll;
+  }
+
+  .card{
+    margin: 15px;
+    width: 200px;
+    height: 300px;
+  }
+  .card h1{
+    font-size: 20px;
+  }
+  .card h2{
+    font-size: 18px;
+  }
+  .card p{
+    font-size: 15px;
+  }
+
+  .poster{
+    width: 190px;
+    height: 100px;
+  }
+  
+  .text p{
+    font-size: 10px;
+  }
+
+}
+  

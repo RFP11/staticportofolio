@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <p class="title">Rafly</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="hamburger">&#9776;</button>
+          <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navUl = document.querySelector('nav ul');
+
+            hamburger.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+            });
+          </script>
+    </nav>
+            <div class="container-head">
+                <div class="about">
+                    <p>Hi. I'm Rafly</p>
+                    <p>A Backend Developer</p>
+                </div>
+                <div class="image-container">
+                    <img class= "image"src="https://i.pinimg.com/originals/0d/0d/f9/0d0df9962b32752bfba31a449732e59e.jpg" alt="zeroTwo">
+                </div>
+            </div>
+            <div class="container-body">
+                <h1>About</h1>
+                <p>Just an Ordinary Teenager with Big Curiosity</p>
+            </div>
+            <div class="myWork">
+                <div class="head-title">
+                    <h1>My Work</h1>
+                </div>
+                <div class="worksheet">
+                        <div class="card">
+                            <h1>Cafe APi</h1>
+                            <img class="poster" src="https://img.freepik.com/free-vector/coffee-beans-banner-template_23-2148903660.jpg?w=740&t=st=1678606482~exp=1678607082~hmac=86cf65996a8c48e83115d8e97eb52934140c1438d38edbea053afdca72f4bbfd" alt="cafe">
+                            <h2>REST API</h2>
+                            <p>My cafe REST API Project</p>
+                            <div class="sub-footer">
+                                <div class="text">
+                                    <p>12-05-2023</p>
+                                </div>
+                            </div>
+                            <a href="https://plain-jumper-moth.cyclic.app/" target="_blank" class="button-link">Here</a>
+                        </div>
+            </div>
+            <div class="footer">
+                <div class="email">
+                    
+                </div>
+                <div class="sm"></div>
+            </div>
+    </body>
+</html>
